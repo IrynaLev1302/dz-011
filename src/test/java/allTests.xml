@@ -1,0 +1,16 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="All Tests">
+    <test name="PersonTests">
+        <classes>
+            <class name="org.example.PersonTest">
+                <methods>
+                    <include name="testManRetirement"/>
+                    <include name="testWomanRetirement"/>
+                    <include name="testRegisterPartnership"/>
+                    <include name="testDeregisterPartnershipWithRevert"/>
+                    <include name="testDeregisterPartnershipWithoutRevert"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
